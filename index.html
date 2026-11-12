@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS2 UZ SHOP</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #141419;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e33434;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ef3838;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(120deg, #19191f, #310d0d);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #ed3939;
+}
+
+.hero p {
+    color: #bbbbbb;
+    font-size: 17px;
+}
+
+.section {
+    padding: 45px 8%;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.section h2 span {
+    color: #ed3939;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #19191f;
+    border: 1px solid #303039;
+    border-radius: 12px;
+    padding: 28px 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #ed3939;
+    transform: translateY(-5px);
+}
+
+.card .symbol {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: #ff4848;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+button {
+    background: #e33434;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #b91f1f;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #141419;
+    color: #888;
+    margin-top: 40px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 7px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CS2 <span>UZ SHOP</span></div>
+    <nav>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#skin">Skinlar</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>CS2 <span>UZ SHOP</span></h1>
+    <p>Counter-Strike 2 xizmatlari va skinlar do‘koni</p>
+</section>
+
+<section class="section" id="services">
+    <h2>Bizning <span>xizmatlar</span></h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="images/OIP.webp" alt="CS2 Prime Status" style="width:100%; border-radius:10px;">
+            <h3>Prime Status</h3>
+            <p>CS2 Prime Status xizmatiga buyurtma bering.</p>
+            <div class="price">Narx belgilanadi</div>
+           <button onclick="window.open('https://t.me/palwaniyazov?text=Prime%20Status%20buyurtma','_blank')">Sotib olish</button>
+        </div>
+
+        <div class="card">
+            <div class="symbol">💳</div>
+            <h3>Steam balans</h3>
+            <p>Steam hisobingiz uchun mablag‘ to‘ldirish xizmati.</p>
+            <div class="price">Narx belgilanadi</div>
+            <button onclick="window.open('https://t.me/palwaniyazov?text=Steam%20balans%20buyurtma','_blank')">Sotib olish</button>
+        </div>
+
+       <div class="card" id="skin">
+   <img src="images/AKs_Wallpaper_Desktop.webp" alt="AK-47 Skin" style="width:100%; border-radius:10px;">
+    <h3>CS2 Skinlar</h3>
+    <p>Sevimli qurollaringiz uchun chiroyli skinlarni tanlang!</p>
+    <div class="price">Narxlar kelishiladi</div>
+    <p>AK-47 | AWP | M4A1-S | Knife</p>
+    <button onclick="window.open('https://t.me/palwaniyazov','_blank')">Skin buyurtma qilish</button>
+</div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 CS2 UZ SHOP. Barcha huquqlar himoyalangan.</p>
+    <p>Mustaqil savdo loyihasi. Valve bilan rasmiy aloqasi yo‘q.</p>
+</footer>
+
+</body>
+</html>
